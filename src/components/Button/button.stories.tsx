@@ -1,6 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import Button, { ButtonProps } from './button';
+import { palette } from '../../palette';
 
 export default {
   title: 'Components/Button',
@@ -11,8 +12,8 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  primaryColour: '#0359B5',
-  secondaryColour: '#ffd166',
+  primaryColour: palette.blue,
+  secondaryColour: palette.pink,
   fontColour: 'white',
   label: 'Button',
 };

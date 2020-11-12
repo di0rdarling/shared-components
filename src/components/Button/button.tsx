@@ -16,6 +16,7 @@ const useStyles = makeStyles(theme => ({
         '&:hover $span': {
             width: '100%',
         },
+        margin: theme.spacing(1)
     }),
     span: (props: ButtonProps) => ({
         height: 4,
